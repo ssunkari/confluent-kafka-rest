@@ -9,4 +9,6 @@ EXPOSE 8082
 
 ADD kafka-rest.properties /usr/etc/kafka-rest/kafka-rest.properties
 
+ADD kafka-avro-serializer-1.0.jar /usr/share/java/kafka-rest/kafka-avro-serializer-1.0.jar
+
 CMD ["/usr/bin/kafka-rest-start", "/usr/etc/kafka-rest/kafka-rest.properties"]
